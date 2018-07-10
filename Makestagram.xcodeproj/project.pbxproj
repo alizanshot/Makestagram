@@ -13,6 +13,8 @@
 		9125A8B820F429510056A4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9125A8B620F429510056A4D4 /* Main.storyboard */; };
 		9125A8BA20F429520056A4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9125A8B920F429520056A4D4 /* Assets.xcassets */; };
 		9125A8BD20F429520056A4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9125A8BB20F429520056A4D4 /* LaunchScreen.storyboard */; };
+		91841BAD20F51C3700E4C59A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91841BAC20F51C3700E4C59A /* Login.storyboard */; };
+		91841BB520F51E1B00E4C59A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91841BB420F51E1B00E4C59A /* LoginViewController.swift */; };
 		DF396586635A4253468BD7B6 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1774B6835E0B94F8C65B97EE /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		9125A8B920F429520056A4D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9125A8BC20F429520056A4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9125A8BE20F429520056A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91841BAC20F51C3700E4C59A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		91841BB420F51E1B00E4C59A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AE455FFB42F3565853BCAF99 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				9125A8B120F429510056A4D4 /* Makestagram */,
+				9125A8B920F429520056A4D4 /* Assets.xcassets */,
 				9125A8B020F429510056A4D4 /* Products */,
 				7F5C381184DF60D910D96FC5 /* Pods */,
 				6E67B97E61EC3311F166B22E /* Frameworks */,
@@ -81,14 +86,79 @@
 			isa = PBXGroup;
 			children = (
 				9125A8B220F429510056A4D4 /* AppDelegate.swift */,
+				91841BAB20F517DB00E4C59A /* Views */,
+				91841BAA20F517D200E4C59A /* Supporting */,
+				91841BA920F517C500E4C59A /* Storyboards */,
+				91841BA820F517B900E4C59A /* Services */,
+				91841BA520F5174800E4C59A /* Helpers */,
+				91841BA320F5171600E4C59A /* Extensions */,
+				91841BA220F5169700E4C59A /* Controllers */,
+				91841BA720F5178F00E4C59A /* Models */,
+			);
+			path = Makestagram;
+			sourceTree = "<group>";
+		};
+		91841BA220F5169700E4C59A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				9125A8B420F429510056A4D4 /* ViewController.swift */,
+				91841BB420F51E1B00E4C59A /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91841BA320F5171600E4C59A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		91841BA520F5174800E4C59A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		91841BA720F5178F00E4C59A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		91841BA820F517B900E4C59A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		91841BA920F517C500E4C59A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				9125A8B620F429510056A4D4 /* Main.storyboard */,
-				9125A8B920F429520056A4D4 /* Assets.xcassets */,
 				9125A8BB20F429520056A4D4 /* LaunchScreen.storyboard */,
+				91841BAC20F51C3700E4C59A /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		91841BAA20F517D200E4C59A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
 				9125A8BE20F429520056A4D4 /* Info.plist */,
 				9102E1DC20F42A0C00A42B6A /* GoogleService-Info.plist */,
 			);
-			path = Makestagram;
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		91841BAB20F517DB00E4C59A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +225,7 @@
 				9125A8BD20F429520056A4D4 /* LaunchScreen.storyboard in Resources */,
 				9102E1DD20F42A0D00A42B6A /* GoogleService-Info.plist in Resources */,
 				9125A8BA20F429520056A4D4 /* Assets.xcassets in Resources */,
+				91841BAD20F51C3700E4C59A /* Login.storyboard in Resources */,
 				9125A8B820F429510056A4D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91841BB520F51E1B00E4C59A /* LoginViewController.swift in Sources */,
 				9125A8B520F429510056A4D4 /* ViewController.swift in Sources */,
 				9125A8B320F429510056A4D4 /* AppDelegate.swift in Sources */,
 			);
@@ -377,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C378TMZW64;
-				INFOPLIST_FILE = Makestagram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C378TMZW64;
-				INFOPLIST_FILE = Makestagram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

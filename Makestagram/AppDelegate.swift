@@ -16,8 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        //create instance of our login storyboard using UIStoryboard method
+        let storyboard = UIStoryboard(name: "Login", bundle: .main)
+        
+        //if storyboard has initial view controller set...
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+            //...then set storyboard as the rootViewController thus, making it the inital screen that the user sees.
+            window?.rootViewController = initialViewController
+            
+            //position window above any other existing window
+            window?.makeKeyAndVisible()
+            
+        }
+        
         return true
     }
 
